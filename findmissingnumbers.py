@@ -48,20 +48,15 @@ class Solution:
         #return type: list of int
         
         #TODO: Write code below to return an int list with the solution to the prompt.
+
         if not numbers:
             return "Invalid input"
         
         numbers.sort()
 
-        missing = [i for i in range(int(numbers[0]), int(numbers[-1])+1) if i not in numbers]
+        missing = [i for i in range(round(numbers[0]), round(numbers[-1]) + 1) if i not in numbers]
 
         return missing if missing else "None missing"
-
-
-                
-
-
-
 
 
 def main():
