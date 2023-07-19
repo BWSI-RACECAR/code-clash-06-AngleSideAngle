@@ -54,6 +54,8 @@ class Solution:
         
         numbers.sort()
 
+        numbers = [round(i) for i in numbers]
+
         missing = [i for i in range(round(numbers[0]), round(numbers[-1]) + 1) if i not in numbers]
 
         return missing if missing else "None missing"
