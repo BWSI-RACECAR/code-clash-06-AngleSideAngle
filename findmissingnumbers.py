@@ -56,7 +56,7 @@ class Solution:
         
         numbers.sort()
 
-        return [i for i in range(int(numbers[0]), int(numbers[-1])) if i not in numbers]
+        return [i for i in range(int(numbers[0]), int(numbers[-1])+1) if i not in numbers]
 
 
                 
