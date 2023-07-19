@@ -48,14 +48,13 @@ class Solution:
         #return type: list of int
         
         #TODO: Write code below to return an int list with the solution to the prompt.
-        pass
         if not numbers:
             return "Invalid input"
         
         if len(numbers) == 1:
             return "None missing"
         
-        numbers = numbers.sort()
+        numbers.sort()
 
         missing = []
 
