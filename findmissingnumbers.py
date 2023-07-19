@@ -51,12 +51,11 @@ class Solution:
         if not numbers:
             return "Invalid input"
         
-        if len(numbers) == 1:
-            return "None missing"
-        
         numbers.sort()
 
-        return [i for i in range(int(numbers[0]), int(numbers[-1])+1) if i not in numbers]
+        missing = [i for i in range(int(numbers[0]), int(numbers[-1])+1) if i not in numbers]
+
+        return missing if missing else "None missing"
 
 
                 
