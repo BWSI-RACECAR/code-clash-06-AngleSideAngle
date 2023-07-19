@@ -56,15 +56,7 @@ class Solution:
         
         numbers.sort()
 
-        missing = []
-
-        last = numbers[0]
-        for i in range(1, len(numbers)):
-            if numbers[i] != numbers[i-1]:
-                for i in range(int(numbers[i-1]), int(numbers[i])):
-                    missing.append(i)
-        
-        return missing
+        return [i for i in range(int(numbers[0]), int(numbers[-1])) if i not in numbers]
 
 
                 
